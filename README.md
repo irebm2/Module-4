@@ -1,9 +1,6 @@
 # Module-4
 
-1
-
-2
-README file for Console-Finances repository
+#README file for Console-Finances repository
 
 Console Finances
 This repository contains the code for a JavaScript application that analyzes the financial records of a company. The application calculates the following metrics:
