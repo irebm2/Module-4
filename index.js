@@ -99,8 +99,8 @@ console.log(finances[3][1]);
 //sum all the rows of the 2nd column
 let sum = 0;
 
-for (let i = 0; i < finances.length; i++) {
-  sum = sum + finances[i][1];
+for (let a = 0; a < finances.length; a++) {
+  sum = sum + finances[a][1];
 }
 console.log(`The sum of the values in the second column is ` + sum);
 
