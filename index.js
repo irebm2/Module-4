@@ -102,7 +102,7 @@ let sum = 0;
 for (let a = 0; a < finances.length; a++) {
   sum = sum + finances[a][1];
 }
-console.log(`The sum of the values in the second column is ` + sum);
+console.log(`The sum of the values in the second column is ` + '$' + sum);
 
 // calculate the difference between the current month and the previous month
 
