@@ -114,22 +114,44 @@ for (let i = 0; i < (finances.length - 1); i++) {
 console.log(Profits)
 let Profitstable = console.table(Profits)
 
+// calculating the avarage of the change
+let avarage = 0
 
+for (let j = 0; j < Profits.length; j++) {
+  if (Profits.length > j) 
+    avarage = avarage + Profits [j] [1]
+}
+
+finalAvarage = (avarage/Profits.length)
+
+console.log('The Avarage Change is: '+ finalAvarage)
+
+// calculating the max and min
 
 let min = Profits[0][1], max = Profits[0][1];
-
+let maxMonth = Profits[0][0], minMonth = Profits[0][0];
 
 for (let i = 0; i < Profits.length; i++) {
   if (Profits[i][1] > max)
-    max = Profits[i][1];
-
+    max = Profits[i][1], maxMonth = Profits[i][0];
+    
   if (Profits[i][1] < min)
-    min = Profits[i][1];
+    min = Profits[i][1], minMonth = Profits[i][0];
 
 }
 
+//checking maxMonth works
+console.log(maxMonth)
 
+//checking max and min works
+console.log("Greatest Increase in Profits/Losses: " + maxMonth+ " $" + max);
+console.log("Greatest Decrease in Profits/Losses: " + minMonth+ " $" + min);
 
-
-console.log("Greatest Increase in Profits/Losses: " + "$" max);
-console.log("Greatest Decrease in Profits/Losses: " + min);
+//final console output
+console.log( "Financial Analysis");
+console.log("----------------");
+console.log("Total Months: " + finances.length)
+console.log("Total: " + "$" + sum);
+console.log("Average Change: " + finalAvarage)
+console.log("Greatest Increase in Profits/Losses: " + maxMonth+ " $" + max);
+console.log("Greatest Decrease in Profits/Losses: " + minMonth+ " $" + min);
