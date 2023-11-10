@@ -86,3 +86,50 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+//this is the number of months
+console.log(finances.length);
+
+//I want to visualize the data as a table
+var financesTable = console.table(finances)
+
+//checking how to select a specific row
+console.log(finances[3][1]);
+
+//sum all the rows of the 2nd column
+let sum = 0;
+
+for (let i = 0; i < finances.length; i++) {
+  sum = sum + finances[i][1];
+}
+console.log(`The sum of the values in the second column is ` + sum);
+
+// calculate the difference between the current month and the previous month
+
+let Profits = [];
+for (let i = 0; i < (finances.length - 1); i++) {
+  substraction = finances[i + 1][1] - finances[i][1]
+  Profits.push([finances[i + 1][0], substraction])
+}
+console.log(Profits)
+let Profitstable = console.table(Profits)
+
+
+
+let min = Profits[0][1], max = Profits[0][1];
+
+
+for (let i = 0; i < Profits.length; i++) {
+  if (Profits[i][1] > max)
+    max = Profits[i][1];
+
+  if (Profits[i][1] < min)
+    min = Profits[i][1];
+
+}
+
+
+
+
+console.log("Greatest Increase in Profits/Losses: " + max);
+console.log("Greatest Decrease in Profits/Losses: " + min);
