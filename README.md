@@ -1,6 +1,6 @@
 # Module-4
 
-#README file for Console-Finances repository
+README file for Console-Finances repository
 
 Console Finances
 This repository contains the code for a JavaScript application that analyzes the financial records of a company. The application calculates the following metrics:
@@ -34,6 +34,7 @@ Greatest decrease in losses: The lowest Profit/Losses value in the finances arra
 Finally, the code logs the results to the console.
 
 Example output
+
 Financial Analysis
 ----------------------------
 Total Months: 86
@@ -41,3 +42,8 @@ Total: $38382578
 Average Change: -2315.12
 Greatest Increase in Profits/Losses: Feb-2012 ($1926159)
 Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)
+
+
+Link to the deployed at live URL: https://irebm2.github.io/Module-4/
+<img width="913" alt="image" src="https://github.com/irebm2/Module-4/assets/146390674/1db26a11-92da-4fc0-ba5e-5b2199cdcdc3">
+
