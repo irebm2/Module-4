@@ -131,5 +131,5 @@ for (let i = 0; i < Profits.length; i++) {
 
 
 
-console.log("Greatest Increase in Profits/Losses: " + max);
+console.log("Greatest Increase in Profits/Losses: " + "$" max);
 console.log("Greatest Decrease in Profits/Losses: " + min);
